@@ -1,4 +1,5 @@
-# This is a Number guessing game which prompts the user to enter the 
+def hasham():
+    # This is a Number guessing game which prompts the user to enter the 
     # guess value and randomly generates a number between 1 and 50. Then
     # compares the number with guess value and if it's equal then it
     # congratulates the user otherwise prompts the user to enter the guess
