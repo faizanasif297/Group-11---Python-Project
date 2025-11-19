@@ -1,5 +1,4 @@
-def hasham():
-    # This is a Number guessing game which prompts the user to enter the 
+# This is a Number guessing game which prompts the user to enter the 
     # guess value and randomly generates a number between 1 and 50. Then
     # compares the number with guess value and if it's equal then it
     # congratulates the user otherwise prompts the user to enter the guess
@@ -8,7 +7,7 @@ def hasham():
     # importing library for random function
     import random
 
-    print("---------Welcome to Number guessing game---------")
+    print("\033[94m---------Welcome to Number guessing game---------\033[0m")
     choice = "Y"
 
     while(choice == "Y"):
@@ -26,9 +25,9 @@ def hasham():
         # if guess is not equal to target number prompting the user again along with some hints
         while guessNumber!=targetNumber:
             if guessNumber>targetNumber :
-                   print("Entered number is greater than the target number.")
+                   print(f"\033[91mEntered number is greater than the target number.\033[0m")
             else :
-                 print("Entered number is less than the target number.")
+                   print(f"\033[92mEntered number is less than the target number.\033[0m")
             # Incrementing the tries by 1
             tries +=1
             # Again prompting the user to enter guess
@@ -37,7 +36,7 @@ def hasham():
                 guessNumber = int(input(f"Try again.Enter your guess{tries}: "))
 
         # Congratulating the player and displaying in how many tries he guessed the number
-        print(f"Congratulations. You guessed the right number in {tries} tries.")
+        print(f"\033[93mCongratulations!. You guessed the right number in {tries} tries.\033[0m")
         # Asking the user whether he wants to play again
         choice = input("Do you want to play again(Y/N):").upper()
         while choice!="Y" and choice != "N": 
